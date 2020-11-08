@@ -816,6 +816,4 @@ export default {
   'components.city':'City',
   'components.Candidate': 'Candidate',
   'components.Employer': 'Employer',
-  'components.Employer':'Employer',
-  'components.Candidate': 'Candidate'
 };

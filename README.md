@@ -1,1 +1,2 @@
-# Staffer
+# CrewUpWeb
+Recruiting staff web application

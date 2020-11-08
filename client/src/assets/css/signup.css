@@ -36,7 +36,6 @@
 
 .signin-up-session{
   text-align: end;
-  
 }
 
 .signin-up-session .MuiButtonBase-root{
@@ -49,18 +48,34 @@
   margin-top: 20px;
 }
 
-
-
 .buttons-container {
   /* background-color: #404040 !important; */
   text-align: center;
   margin-top: 15px;
 }
+
 .backgroundWhite{
   background-color: white;
   border-radius: 5px;
 }
 
+.signup-button-2{
+  margin-top: 15px;
+}
+
+.signup-button-2:hover {
+  background-color: #2d99ca !important;
+  color: white !important;
+}
+
+.signup-button-appbar{
+  background-color: white !important;
+}
+
+.signup-button-appbar:hover{
+  background-color: #404040 !important;
+  color: white !important;
+}
 
 @media only screen and (max-width: 600px) {
   .form-container{
@@ -79,7 +94,3 @@
   }
 }
 
-.signup-button-2:hover {
-  background-color: #2d99ca !important;
-  color: white !important;
-}

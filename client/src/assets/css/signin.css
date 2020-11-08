@@ -16,6 +16,7 @@ p{
 .background .MuiButton-containedPrimary{
     background-color: white;
     color: black !important;
+    margin-top: 15px;
 }
 
 .logo-container{
