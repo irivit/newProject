@@ -26,6 +26,7 @@ import {
 
 import AppSignIn from './SigninFirebase';
 import AppSignUp from './SignupFirebase';
+import AppLanding from './LandingPage';
 
 import {getUser} from '../actions';
 
@@ -40,7 +41,7 @@ const InitialPath = ({component: Component, authUser, ...rest}) => (
         ? <Component {...props} />
         : <Redirect
             to={{
-              pathname: '/signin',
+              pathname: '/landing',
               state: {from: props.location},
             }}
           />
@@ -54,7 +55,7 @@ class App extends Component {
     const {location, match, user, userData} = this.props;
     if (location.pathname === '/') {
       if (user === null) {
-        return <Redirect to={'/signin'} />;
+        return <Redirect to={'/landing'} />;
       } else {
         if (userData.Rol != 'Client') {
           return <Redirect to={'/app/client'} />;
@@ -73,6 +74,7 @@ class App extends Component {
           component={RctDefaultLayout}
         />
         <Route path="/dashboard" component={CRMLayout} />
+        <Route path="/landing" component={AppLanding} />
         <Route path="/signin" component={AppSignIn} />
         <Route path="/signup" component={AppSignUp} />
         <Route path="/session/404" component={AsyncSessionPage404Component} />
